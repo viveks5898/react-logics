@@ -1,8 +1,9 @@
 import "./App.css";
-import AddTodo from "./compoents/AddTodo";
+import RadioButton from "./compoents/RadioButton";
 
 function App() {
-  return <AddTodo />;
+
+  return <RadioButton />;
 }
 
 export default App;
