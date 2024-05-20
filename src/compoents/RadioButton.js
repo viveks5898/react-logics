@@ -28,7 +28,7 @@ const RadioButton = () => {
                 id={ele}
                 name="options"
                 value={ele}
-                onChange={(e) => setOptopmState(e.target.value)}
+                onChange={(e) => console.log(e.target.value)}
               />
               <label for={ele}>{ele}</label>
             </div>
