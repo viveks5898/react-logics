@@ -50,12 +50,7 @@ const MultipleDropdown = () => {
     const index = locations.findIndex((ele) => ele.country == selectCountry);
     setActiveIndex(index);
   };
-
-  const cities = ["New York", "Los Angeles", "Chicago"]
-
-  const handleChange =(e)=>{
-    console.log(e.target.value)
-  }
+  
   return (
     <div>
       <h2 style={{ textAlign: "center", padding: "45px" }}>
@@ -65,10 +60,10 @@ const MultipleDropdown = () => {
         <div>
           <label for="cars">Choose a country:</label>
 
-          <select name="cities" id="cities" onChange={(e)=>handleChange(e)} >
-            {cities.map((ele, key) => (
-              <option value={ele} key={key}>
-                {ele}
+          <select name="Coutntries" id="coutntries" onChange={onChangeHandle}>
+            {locations.map((ele, key) => (
+              <option value={ele.country} key={key}>
+                {ele.country}
               </option>
             ))}
           </select>
