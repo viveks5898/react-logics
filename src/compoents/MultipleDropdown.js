@@ -51,6 +51,7 @@ const MultipleDropdown = () => {
     setActiveIndex(index);
   };
   
+  
   return (
     <div>
       <h2 style={{ textAlign: "center", padding: "45px" }}>
